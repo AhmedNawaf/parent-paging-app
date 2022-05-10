@@ -10,9 +10,14 @@
     "nodemon": "^2.0.7"
   },
   "scripts": {
+    "start": "node server.js",
     "devStart": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "16.x"
+    }
+    
 }
