@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "snowpack dev",
+    "build": "snowpack build",
     "test": "snowpack init"
   },
   "keywords": [],
