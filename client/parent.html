@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/normlize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="parent.js" type="module"></script>
+    <script src="./js/parent.js" type="module"></script>
 </head>
 <body>
     <main class="main">
@@ -17,6 +17,8 @@
                 Parent
             </h1>
         </div>
+
+
         <form class="btn-container" style="flex-direction: column;">
             <button class="item" id="parent-call">
                 <div class="card">
@@ -43,6 +45,17 @@
                 </div>
             </button>
     </form>
+
+    <div class="modal-overlay" id="notification-alert">
+        <div class="modal">
+            <h3>
+                I finished The School, can you pick me right now?
+            </h3>
+            <button type="submit" class="modal-btn" id="close">
+                Close
+            </button>
+        </div>
+    </div>
     </main>
 </body>
 </html>

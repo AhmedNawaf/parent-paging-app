@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Child</title>
+    <title>Parent</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/normlize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/child.js" type="module"></script>
+    <script src="./js/parent.js" type="module"></script>
 </head>
 <body>
-    <section id="child" class="main">
+    <main class="main">
         <div class="welcome-message">
             <h1>
-                Children
+                Parent
             </h1>
         </div>
-    
-        <form class="btn-container" id="child-send">
-            <button class="item">
+        <form class="btn-container" style="flex-direction: column;">
+            <button class="item" id="parent-call">
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-phone fa-3x"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3>
+                            Call
+                        </h3>
+                    </div>
+                </div>
+            </button>
+            <button class="item" id="parent-send">
                 <div class="card">
                     <div class="card-icon">
                         <i class="fa-solid fa-bell fa-3x"></i>
@@ -32,34 +43,6 @@
                 </div>
             </button>
     </form>
-    </section>
-
-
-    <div class="call-card" id="call-card">
-        <div class="caller">
-            <h2>
-                Parent
-            </h2>
-        </div>
-        <div class="call-btns">
-            <a href="#">
-                <i class="fa-solid fa-phone"></i>
-            </a>
-            <a href="#">
-                <i class="fa-solid fa-phone"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="modal-overlay" id="notification-alert">
-        <div class="modal">
-            <h3>
-                I'm out, waiting for you.
-            </h3>
-            <button type="submit" class="modal-btn" id="close">
-                Close
-            </button>
-        </div>
-    </div>
+    </main>
 </body>
 </html>

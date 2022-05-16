@@ -1,4 +1,4 @@
-import {io} from "socket.io-client"
+import {io} from "../_snowpack/pkg/socket.io-client.js"
 const socket = io("https://parent-paging-app.herokuapp.com/")
 
 const parentCall = document.getElementById("parent-call")
