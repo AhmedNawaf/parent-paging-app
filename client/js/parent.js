@@ -33,6 +33,6 @@ function notificationSent(e) {
 
 // Socket Event
 
-socket.on("child-sent", () => {
+socket.on("child-sent", () => { // when the socket receive "child-sent" function from the server, call a function
     notificationAlert.classList.add("show"); //show the notification message
 })
