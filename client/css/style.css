@@ -135,13 +135,20 @@ h2,h3 {
     color: black;
     width: 350px;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 1rem 0;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
    gap: 1rem;
 }
+
+.modal .modal-text {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+
 .modal-btn {
     padding: .5rem 1rem;
     color: white;

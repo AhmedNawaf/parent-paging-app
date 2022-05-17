@@ -1,10 +1,10 @@
-const io = require("socket.io")(process.env.PORT,{ // create a socket.io server and the port is an environment variable
+const server = require("socket.io")(process.env.PORT,{ // create a socket.io server and the port is an environment variable
     cors: { 
         origin: "*"  //CORS is blocking the request sent from the client so we want to disable CORS
     }
 })
 
-io.on("connection", socket => { // when the client is connecting to the server do what's inside the event block
+server.on("connection", socket => { // when the client is connecting to the server, the server listen incoming requests
 
     socket.on("parent-call", () => { // When the server receive the function "parent-call", call a function.
         socket.broadcast.emit("parent-called"); // send "parent-called" function to the client
